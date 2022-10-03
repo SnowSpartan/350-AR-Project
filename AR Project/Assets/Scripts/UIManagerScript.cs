@@ -12,6 +12,12 @@ public class UIManagerScript : MonoBehaviour
     public Button expandButton;
     public Button yourTurn;
 
+    //Assets for Pause Menu UI
+    [SerializeField] GameObject pauseMenu;
+    
+    //Assets for Settings Menu UI
+    [SerializeField] GameObject SettingsMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,5 +63,32 @@ public class UIManagerScript : MonoBehaviour
         yourTurn.gameObject.SetActive(false);
         expandButton.gameObject.SetActive(true);
         //expandButton.gameObject.SetActive(true);
+    }
+
+
+    //functionality for Pause Menu UI
+    public void Pause()
+    {
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Resume()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    //functionality for Settings Menu UI
+    public void OpenSettings()
+    {
+        SettingsMenu.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Close()
+    {
+        SettingsMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
