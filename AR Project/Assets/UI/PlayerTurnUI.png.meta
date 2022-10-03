@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 95cb1612c90f7d04c9862a637cf58229
+guid: 7cdd02bc5429b1a48a9841a7b20e4a90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3735237552082709393
-    second: menuMasterSheet_0
+      213: 6309575708701096553
+    second: PlayerTurnUI_0
   - first:
-      213: 7268597155604994386
-    second: menuMasterSheet_1
+      213: 3093974976493266474
+    second: PlayerTurnUI_1
   - first:
-      213: 717261328291411194
-    second: menuMasterSheet_2
+      213: -489874860221406555
+    second: PlayerTurnUI_2
+  - first:
+      213: -2681246052588544593
+    second: PlayerTurnUI_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,11 +127,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menuMasterSheet_0
+      name: PlayerTurnUI_0
       rect:
         serializedVersion: 2
         x: 47
-        y: 1329
+        y: 1486
         width: 986
         height: 223
       alignment: 0
@@ -138,18 +141,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19be69373ca36d330800000000000000
-      internalID: 3735237552082709393
+      spriteID: 96aff807dad109750800000000000000
+      internalID: 6309575708701096553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menuMasterSheet_1
+      name: PlayerTurnUI_1
       rect:
         serializedVersion: 2
         x: 47
-        y: 1035
+        y: 1192
         width: 986
         height: 223
       alignment: 0
@@ -159,18 +162,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25910433a9e3fd460800000000000000
-      internalID: 7268597155604994386
+      spriteID: a2624d939d100fa20800000000000000
+      internalID: 3093974976493266474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menuMasterSheet_2
+      name: PlayerTurnUI_2
       rect:
         serializedVersion: 2
         x: 47
-        y: 741
+        y: 898
         width: 986
         height: 223
       alignment: 0
@@ -180,8 +183,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af43febb06934f900800000000000000
-      internalID: 717261328291411194
+      spriteID: 5a2eb1cf86d9339f0800000000000000
+      internalID: -489874860221406555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurnUI_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 583
+        width: 986
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad9a08cbec4acad0800000000000000
+      internalID: -2681246052588544593
       vertices: []
       indices: 
       edges: []
@@ -189,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 06e3ff4db145fdf4fa5f3eb444470a97
+    spriteID: a1f8fc8bb82252d4aa9591d7da868127
     internalID: 0
     vertices: []
     indices: 

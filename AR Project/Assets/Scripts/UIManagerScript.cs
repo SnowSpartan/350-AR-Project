@@ -9,7 +9,7 @@ public class UIManagerScript : MonoBehaviour
 
     //Turn Functionality Assets
     public Button playerTurn;
-    public Text playerText;
+    public Image playerText;
     public Button expandButton;
     public Button yourTurn;
 
