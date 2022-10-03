@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManagerScript : MonoBehaviour
 {
@@ -84,6 +85,13 @@ public class UIManagerScript : MonoBehaviour
     {
         SettingsMenu.SetActive(true);
         Time.timeScale = 0f;
+    }
+
+    public void ExitButton()
+    {
+        Application.Quit();
+        Debug.Log("Game Closed");
+        //SceneManager.LoadScene("MainMenu");
     }
 
     public void Close()
