@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] GameObject gameCredits;
+    
     public void ExitButton()
     {
         Application.Quit();
@@ -14,5 +16,15 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("GameTest");
+    }
+
+    public void CreditsButton()
+    {
+        gameCredits.SetActive(true);
+    }
+
+    public void CloseButton()
+    {
+        gameCredits.SetActive(false);
     }
 }
