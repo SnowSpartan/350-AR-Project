@@ -1984,7 +1984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edbff094477eb9346a6c3096db0a41f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 1426003932268484219, guid: ff1a7e7c4425ba94a90865e8ec47c47d, type: 3}
+  towerPrefab: {fileID: 7830597059627747541, guid: ff1a7e7c4425ba94a90865e8ec47c47d, type: 3}
   crosshair: {fileID: 2145850148}
   defaultMaterial: {fileID: 8808940753066210417, guid: de4da3906a001624fabcc7838ddf2eb4, type: 3}
   selectedMaterial: {fileID: 2100000, guid: 61ba0e735430d7a4aa911755bd688975, type: 2}
