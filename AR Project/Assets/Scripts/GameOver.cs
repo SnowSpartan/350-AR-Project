@@ -37,13 +37,13 @@ public class GameOver : MonoBehaviour
 
     public void setBlockY()
     {
-        GameObject[] fallingBlock = GameObject.FindGameObjectsWithTag("Block");
+        GameObject[] fallingBlock = GameObject.FindGameObjectsWithTag("Blocks");
         foreach (GameObject block in fallingBlock)
         {
             if (block.transform.position.y < groundLevel)
             {
                 youLoseText.GetComponent<Text>().enabled = true;
-                Debug.Log("Block fell past limit; the game is over.");
+                //Debug.Log("Block fell past limit; the game is over.");
             }
         }
     }
