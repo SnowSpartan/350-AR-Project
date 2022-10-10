@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public GameObject TowerOfBlocks;
-    public float groundLevel;
+    public GameObject towerOfBlocks;
+    public float groundLevel = 0;
 
     public GameObject[] fallingBlock;
 
@@ -24,20 +24,23 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject TowerOfBlocks = GameObject.FindGameObjectWithTag("Tower");
-        findBottomOfTower();
-        setBlockY();
+        towerOfBlocks = GameObject.FindWithTag("Tower");
+        if (towerOfBlocks)
+        {
+            // findBottomOfTower();
+                    setBlockY();
+        }
     }
 
     public void findBottomOfTower()
     {
-        renderer = TowerOfBlocks.GetComponent<Renderer>();
+        renderer = towerOfBlocks.GetComponent<Renderer>();
         groundLevel = renderer.bounds.min.y;
     }
 
     public void setBlockY()
     {
-        GameObject[] fallingBlock = GameObject.FindGameObjectsWithTag("Blocks");
+        GameObject[] fallingBlock = GameObject.FindGameObjectsWithTag("Block");
         foreach (GameObject block in fallingBlock)
         {
             if (block.transform.position.y < groundLevel)
